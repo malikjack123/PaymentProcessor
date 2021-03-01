@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\2020020120162254_InitialMigration.cs" />
+    <Compile Remove="Migrations\2020020120162254_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200we201221526_PaymentState_CreatedDate.cs" />
+    <Compile Remove="Migrations\20200we201221526_PaymentState_CreatedDate.Designer.cs" />
+    <Compile Remove="Migrations\PaymentPrwocessorContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
